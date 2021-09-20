@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import React from "react";
 import heart from "./heartV3.jpg"
+import simpleParallax from 'simple-parallax-js';
 
 const url = 'https://api.nasa.gov/planetary/apod?api_key=';
 const api_key = 'f9DRrc9EdtxkyKQ9CasetCZJv8jdX20P0j9LXkZ4';
@@ -60,6 +61,7 @@ class App extends React.Component {
       };
     })
   }
+
 
   fetchNASAData = async () => {
 
